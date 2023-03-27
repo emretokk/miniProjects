@@ -86,6 +86,7 @@ let changeTime = () => {
 		+ curTime.getSeconds()
 	date.style.backgroundColor = dateColors[curDateColor]
 	curDateColor = (curDateColor + 1) % dateColors.length
+	yirmiyirmi.textContent = curTime.getFullYear()
 	setTimeout(changeTime,1000)
 }
 changeTime()
